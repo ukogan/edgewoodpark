@@ -1,0 +1,60 @@
+Below is a ready-to-paste prompt you can drop into Replit AI, Loveable, or any code-generation assistant to produce a **clear requirements/spec document** for your new static site.
+
+---
+
+```
+You are a senior front-end developer and UX strategist.  
+
+**Task**  
+Create a concise, bullet-style requirements and site-map document for a new personal-brand website. The site will later be turned into hand-coded static HTML5/CSS (no frameworks) and hosted at **EdgewoodPark.io**.
+
+**Audience & Tone**  
+• B2B software executives, VPs of Product, founders  
+• Professional and confident yet approachable (think “trusted advisor,” not “corporate brochure”)  
+
+**Brand Inputs**  
+• Site name / logo text: Edgewood Park  
+• Color cues: fresh greens + muted neutrals (drawn from photos of Edgewood Park)  
+• Typography: modern sans-serif headings, readable serif or humanist sans body copy  
+• Imagery: my own landscape photos of Edgewood Park; use as hero backgrounds or section dividers  
+
+**Core Pages & Goals**  
+1. **Home / Landing** – quick value proposition + CTA to book a call  
+2. **About** – short bio, leadership philosophy, headshot  
+3. **Services** – Product Marketing, Product Management Advisory, Fractional CMO (sections w/ bullets & sample deliverables)  
+4. **Work Samples** –  
+   • three linked PDF/HTML articles (pulled from provided project files)  
+   • embedded YouTube/Wistia playlist of conference talks & demos  
+5. **Blog / Insights** – list existing posts from project files (keep simple Markdown-style layout)  
+6. **Testimonials** – client quotes with names, titles, logos (pull from existing file)  
+7. **Contact** – email form + social links (LinkedIn `linkedin.com/in/kogan`, GitHub repo link)  
+
+**Functional & Technical Requirements**  
+• Fully responsive (mobile-first, max 2 breakpoints)  
+• Accessibility: WCAG 2.1 AA basics (semantic HTML, alt text, color contrast)  
+• Performance: under 100 KB initial load, lazy-load images, no external JS except embedded videos  
+• SEO basics: meta titles/descriptions, Open Graph tags, sitemap.xml stub  
+• Reusable CSS utility classes; keep CSS under 300 lines  
+• Folder structure:  
+```
+
+/index.html
+/about/index.html
+/services/index.html
+/samples/…
+/blog/…
+/assets/img/ (park photos, headshot)
+/assets/css/style.css
+
+```
+• Clearly mark placeholders (e.g., `{{YOUR_BIO}}`, `{{VIDEO_ID}}`) the client will update later.  
+
+**Deliverables**  
+1. Bullet-style requirements document (this task)  
+2. Wireframe sketches (optional, low-fi)  
+3. Starter file set with HTML & CSS stubs (future step)  
+```
+
+---
+
+Feel free to tweak any section before running it. Once the generator returns the spec, we can iterate on copy, visuals, or start scaffolding the actual HTML/CSS. Let me know how you'd like to proceed!
