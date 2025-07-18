@@ -2142,13 +2142,14 @@ section {
 /* Testimonial Card Component */
 .testimonial-card {
     background: white;
-    border-radius: 16px;
-    padding: var(--spacing-2xl);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     border: 1px solid var(--border-color);
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: var(--spacing-lg);
 }
 
 .testimonial-content {
@@ -2159,60 +2160,122 @@ section {
 
 .testimonial-quote {
     flex: 1;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
 }
 
 .quote-icon {
     color: var(--primary-green);
-    width: 32px;
-    height: 32px;
-    margin-bottom: var(--spacing-md);
+    width: 24px;
+    height: 24px;
+    margin-bottom: var(--spacing-sm);
 }
 
 .quote-text {
-    font-size: 1.125rem;
-    line-height: 1.7;
+    font-size: 1rem;
+    line-height: 1.6;
     color: var(--text-primary);
     font-style: italic;
+    text-align: left;
 }
 
 .testimonial-author {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-md);
     border-top: 1px solid var(--border-color);
 }
 
 .author-info {
     flex: 1;
+    text-align: left;
 }
 
 .author-name {
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: var(--spacing-xs);
+    font-size: 0.9rem;
 }
 
 .author-title {
     color: var(--text-secondary);
-    font-size: 0.875rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
 }
 
 .company-logo {
     flex-shrink: 0;
     margin-left: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 48px;
 }
 
 .logo-image {
-    height: 32px;
+    max-height: 48px;
+    max-width: 80px;
     width: auto;
-    filter: grayscale(100%) opacity(0.7);
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.8);
     transition: var(--transition-medium);
 }
 
 .testimonial-card:hover .logo-image {
     filter: grayscale(0%) opacity(1);
+}
+
+/* Testimonials Grid Spacing */
+.testimonials-grid {
+    gap: var(--spacing-lg);
+}
+
+.testimonials-grid .testimonial-card:last-child {
+    margin-bottom: 0;
+}
+
+/* Legacy testimonial styling for existing cards */
+.quote-icon-small {
+    font-size: 2rem;
+    color: var(--primary-green);
+    font-weight: bold;
+    line-height: 1;
+    margin-right: var(--spacing-sm);
+}
+
+.client-logo-text {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 6px;
+}
+
+/* Override existing testimonial card styling where needed */
+.testimonials-grid .testimonial-card .testimonial-quote {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.testimonials-grid .testimonial-card .testimonial-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin-left: var(--spacing-md);
+    text-align: left;
+}
+
+.testimonials-grid .testimonial-card .testimonial-author {
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-md);
 }
 
 /* Service Card Component */
