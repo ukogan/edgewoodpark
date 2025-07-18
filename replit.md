@@ -6,11 +6,16 @@ This is a static website for Edgewood Park, a strategic product leadership consu
 
 ## Recent Changes
 
-- **July 18, 2025**: Complete content integration across all major pages:
+- **July 18, 2025**: Complete content integration and visual enhancement:
   - **Blog Content**: Added 3 complete blog posts with real content showcasing expertise
   - **About Page**: Updated with Uri's actual bio, experience, and inspiration story about Edgewood Park
   - **Services Page**: Integrated real service offerings (Fractional CMO, Consulting, Lend a Hand)
   - **Testimonials Page**: Added 5 authentic testimonials from real clients and colleagues
+  - **Park Photography**: Integrated beautiful Edgewood Park images throughout the site:
+    - Homepage hero: Misty morning landscape ("above-the-fog.jpg")
+    - About page hero: Lush green park vista ("park-vista.jpg")
+    - Services page hero: Green hills and valleys
+    - Blog and testimonials: Alternating park scenes for visual cohesion
 - **Enhanced Styling**: Added comprehensive CSS for all new content sections with professional typography and responsive design
 - **Professional Polish**: All placeholder content replaced with authentic, compelling content that demonstrates expertise
 
