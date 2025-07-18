@@ -155,6 +155,17 @@ function animateProgressBar(element) {
 
 // ===== PARALLAX EFFECTS =====
 function initializeParallax() {
+    // Initialize Rellax if available
+    if (typeof Rellax !== 'undefined') {
+        const rellax = new Rellax('.rellax');
+        
+        // Optional: Add performance optimization for mobile
+        if (window.innerWidth < 768) {
+            rellax.destroy();
+        }
+    }
+    
+    // Fallback for elements with basic parallax classes
     const parallaxElements = document.querySelectorAll('.parallax-slow, .parallax-medium, .parallax-fast');
     
     if (parallaxElements.length === 0) return;

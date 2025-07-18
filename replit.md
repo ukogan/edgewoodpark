@@ -6,6 +6,14 @@ This is a static website for Edgewood Park, a strategic product leadership consu
 
 ## Recent Changes
 
+- **July 18, 2025**: Parallax scrolling effects and navigation fixes:
+  - **Parallax Scrolling**: Added Rellax.js library for smooth parallax effects on hero background images
+  - **Navigation Links**: Fixed all navigation links to use relative paths for GitHub Pages deployment
+  - **Background Images**: Applied parallax effects to hero images across all pages (speed: -7)
+  - **Subtle Animations**: Added gentle parallax to CTA buttons and bio image for enhanced visual depth
+  - **Mobile Optimization**: Parallax effects disabled on mobile devices for better performance
+  - **Library Integration**: Rellax.js CDN added to all HTML pages with proper initialization in main.js
+
 - **July 18, 2025**: Complete content integration and visual enhancement:
   - **Favicon**: Added professional favicon across all pages
   - **Updated Logos**: Replaced with official HP and Salesforce logos, added Instinctive Solutions logo for Dave Jones
