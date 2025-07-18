@@ -2214,19 +2214,30 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 36px;
+    width: 120px;
+    height: 80px;
     overflow: hidden;
 }
 
 .logo-image {
-    max-height: 36px;
-    max-width: 60px;
+    max-height: 80px;
+    max-width: 120px;
     width: auto;
     height: auto;
     object-fit: contain;
     filter: grayscale(100%) opacity(0.8);
     transition: var(--transition-medium);
+}
+
+/* Force override for testimonial logos */
+.testimonial-card .company-logo {
+    width: 120px !important;
+    height: 80px !important;
+}
+
+.testimonial-card .logo-image {
+    max-height: 80px !important;
+    max-width: 120px !important;
 }
 
 .testimonial-card:hover .logo-image {
@@ -2277,6 +2288,28 @@ section {
 .testimonials-grid .testimonial-card .testimonial-author {
     padding-left: var(--spacing-xl);
     padding-right: var(--spacing-md);
+}
+
+/* Additional specific overrides for logo sizing */
+.testimonials-grid .company-logo,
+.testimonials-section .company-logo,
+.testimonial-card .company-logo {
+    width: 120px !important;
+    height: 80px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+}
+
+.testimonials-grid .logo-image,
+.testimonials-section .logo-image,
+.testimonial-card .logo-image {
+    max-height: 80px !important;
+    max-width: 120px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
 }
 
 /* Service Card Component */
@@ -2521,3 +2554,4 @@ section {
         gap: var(--spacing-xl);
     }
 }
+/* Cache busting comment - Fri Jul 18 04:55:11 PM UTC 2025 */
