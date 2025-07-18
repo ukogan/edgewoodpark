@@ -417,6 +417,8 @@ a:hover {
     object-fit: cover;
     object-position: center;
     z-index: -2;
+    /* Ensure consistent dimensions across all hero images */
+    min-height: 500px;
 }
 
 .hero-overlay {
@@ -475,11 +477,14 @@ a:hover {
 /* Page hero (smaller version) */
 .page-hero {
     position: relative;
-    min-height: 60vh;
+    min-height: 500px;
+    height: 60vh;
+    max-height: 600px;
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, var(--primary-green-light) 0%, var(--primary-green) 100%);
     margin-top: 80px;
+    overflow: hidden;
 }
 
 .page-hero-content {
@@ -1259,6 +1264,69 @@ section {
     }
 }
 
+/* ===== HEADSHOT AND CLIENT LOGOS ===== */
+.headshot-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.client-logo {
+    max-width: 120px;
+    height: auto;
+    filter: brightness(0.8);
+    transition: var(--transition-medium);
+}
+
+.client-logo:hover {
+    filter: brightness(1);
+}
+
+.client-logo-small {
+    max-width: 80px;
+    height: auto;
+    filter: brightness(0.7);
+    transition: var(--transition-medium);
+}
+
+.client-logo-small:hover {
+    filter: brightness(1);
+}
+
+.client-logo-text {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    background: var(--color-bg-alt);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+}
+
+.company-logo-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--spacing-xs);
+}
+
+/* Quote icons styling */
+.quote-icon,
+.quote-icon-small {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    line-height: 1;
+    margin-bottom: var(--spacing-sm);
+    font-family: Georgia, serif;
+}
+
+.quote-icon-small {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+}
+
 /* ===== FAQ SECTION ===== */
 .faq-section {
     padding: var(--spacing-4xl) 0;
@@ -1607,7 +1675,7 @@ section {
     width: 100%;
     height: 100%;
     background: url('../img/park-nature-3.jpg') center/cover;
-    opacity: 0.05;
+    opacity: 0.15;
     z-index: -1;
 }
 
@@ -1625,7 +1693,7 @@ section {
     width: 100%;
     height: 100%;
     background: url('../img/park-vista.jpg') center/cover;
-    opacity: 0.03;
+    opacity: 0.08;
     z-index: -1;
 }
 
@@ -1642,7 +1710,7 @@ section {
     width: 100%;
     height: 100%;
     background: url('../img/above-the-fog.jpg') center/cover;
-    opacity: 0.03;
+    opacity: 0.08;
     z-index: -1;
 }
 
