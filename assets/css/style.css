@@ -2225,7 +2225,6 @@ section {
     width: auto;
     height: auto;
     object-fit: contain;
-    filter: grayscale(100%) opacity(0.8);
     transition: var(--transition-medium);
 }
 
@@ -2238,10 +2237,6 @@ section {
 .testimonial-card .logo-image {
     max-height: 80px !important;
     max-width: 120px !important;
-}
-
-.testimonial-card:hover .logo-image {
-    filter: grayscale(0%) opacity(1);
 }
 
 /* Testimonials Grid Spacing */
@@ -2315,7 +2310,6 @@ img.logo-image {
     width: auto !important;
     height: auto !important;
     object-fit: contain !important;
-    filter: grayscale(100%) opacity(0.8) !important;
     transition: var(--transition-medium) !important;
 }
 
