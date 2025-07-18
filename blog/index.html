@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Strategic insights and best practices for product marketing and management in B2B software">
+    <meta name="keywords" content="product marketing blog, B2B software insights, product management best practices">
+    
+    <title>Insights - Edgewood Park</title>
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/" class="logo-link">
+                    <h1 class="logo-text">Edgewood Park</h1>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/services/" class="nav-link">Services</a>
+                <a href="/samples/" class="nav-link">Work Samples</a>
+                <a href="/blog/" class="nav-link active">Insights</a>
+                <a href="/testimonials/" class="nav-link">Testimonials</a>
+                <a href="/contact/" class="nav-link nav-cta">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-title animate-slide-up">Insights</h1>
+                <p class="page-subtitle animate-slide-up animate-delay-1">
+                    Strategic insights and best practices for product marketing and management
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post">
+        <div class="container">
+            <div class="featured-content animate-on-scroll">
+                <div class="featured-image">
+                    <div class="featured-overlay">
+                        <div class="featured-badge">Featured</div>
+                    </div>
+                </div>
+                <div class="featured-text">
+                    <div class="featured-meta">
+                        <span class="featured-category">Strategy</span>
+                        <span class="featured-date">{{FEATURED_POST_DATE}}</span>
+                    </div>
+                    <h2 class="featured-title">{{FEATURED_POST_TITLE}}</h2>
+                    <p class="featured-excerpt">{{FEATURED_POST_EXCERPT}}</p>
+                    <div class="featured-tags">
+                        <span class="tag">{{FEATURED_POST_TAG_1}}</span>
+                        <span class="tag">{{FEATURED_POST_TAG_2}}</span>
+                        <span class="tag">{{FEATURED_POST_TAG_3}}</span>
+                    </div>
+                    <a href="{{FEATURED_POST_URL}}" class="btn btn-primary">
+                        <span>Read Full Article</span>
+                        <i data-feather="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card animate-on-scroll animate-delay-1">
+                    <div class="category-icon">
+                        <i data-feather="target"></i>
+                    </div>
+                    <h3 class="category-title">Product Marketing</h3>
+                    <p class="category-description">Go-to-market strategies, positioning, and competitive analysis</p>
+                    <div class="category-count">12 Articles</div>
+                </div>
+                <div class="category-card animate-on-scroll animate-delay-2">
+                    <div class="category-icon">
+                        <i data-feather="compass"></i>
+                    </div>
+                    <h3 class="category-title">Product Management</h3>
+                    <p class="category-description">Roadmap planning, feature prioritization, and user research</p>
+                    <div class="category-count">8 Articles</div>
+                </div>
+                <div class="category-card animate-on-scroll animate-delay-3">
+                    <div class="category-icon">
+                        <i data-feather="trending-up"></i>
+                    </div>
+                    <h3 class="category-title">Growth Strategy</h3>
+                    <p class="category-description">Scaling teams, revenue operations, and market expansion</p>
+                    <div class="category-count">6 Articles</div>
+                </div>
+                <div class="category-card animate-on-scroll animate-delay-4">
+                    <div class="category-icon">
+                        <i data-feather="users"></i>
+                    </div>
+                    <h3 class="category-title">Leadership</h3>
+                    <p class="category-description">Team building, culture, and executive insights</p>
+                    <div class="category-count">5 Articles</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts -->
+    <section class="posts-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-on-scroll">Recent Posts</h2>
+                <p class="section-subtitle animate-on-scroll">
+                    Latest insights from the world of product marketing and management
+                </p>
+            </div>
+            <div class="posts-grid">
+                <!-- Post 1 -->
+                <article class="post-card animate-on-scroll animate-delay-1">
+                    <div class="post-image">
+                        <div class="post-overlay">
+                            <div class="post-category">Product Marketing</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">{{POST_1_DATE}}</span>
+                            <span class="post-readtime">5 min read</span>
+                        </div>
+                        <h3 class="post-title">{{POST_1_TITLE}}</h3>
+                        <p class="post-excerpt">{{POST_1_EXCERPT}}</p>
+                        <div class="post-tags">
+                            <span class="tag">{{POST_1_TAG_1}}</span>
+                            <span class="tag">{{POST_1_TAG_2}}</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="post-card animate-on-scroll animate-delay-2">
+                    <div class="post-image">
+                        <div class="post-overlay">
+                            <div class="post-category">Strategy</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">{{POST_2_DATE}}</span>
+                            <span class="post-readtime">7 min read</span>
+                        </div>
+                        <h3 class="post-title">{{POST_2_TITLE}}</h3>
+                        <p class="post-excerpt">{{POST_2_EXCERPT}}</p>
+                        <div class="post-tags">
+                            <span class="tag">{{POST_2_TAG_1}}</span>
+                            <span class="tag">{{POST_2_TAG_2}}</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="post-card animate-on-scroll animate-delay-3">
+                    <div class="post-image">
+                        <div class="post-overlay">
+                            <div class="post-category">Growth</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">{{POST_3_DATE}}</span>
+                            <span class="post-readtime">6 min read</span>
+                        </div>
+                        <h3 class="post-title">{{POST_3_TITLE}}</h3>
+                        <p class="post-excerpt">{{POST_3_EXCERPT}}</p>
+                        <div class="post-tags">
+                            <span class="tag">{{POST_3_TAG_1}}</span>
+                            <span class="tag">{{POST_3_TAG_2}}</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="post-card animate-on-scroll animate-delay-1">
+                    <div class="post-image">
+                        <div class="post-overlay">
+                            <div class="post-category">Leadership</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">{{POST_4_DATE}}</span>
+                            <span class="post-readtime">8 min read</span>
+                        </div>
+                        <h3 class="post-title">{{POST_4_TITLE}}</h3>
+                        <p class="post-excerpt">{{POST_4_EXCERPT}}</p>
+                        <div class="post-tags">
+                            <span class="tag">{{POST_4_TAG_1}}</span>
+                            <span class="tag">{{POST_4_TAG_2}}</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="post-card animate-on-scroll animate-delay-2">
+                    <div class="post-image">
+                        <div class="post-overlay">
+                            <div class="post-category">Product Management</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">{{POST_5_DATE}}</span>
+                            <span class="post-readtime">4 min read</span>
+                        </div>
+                        <h3 class="post-title">{{POST_5_TITLE}}</h3>
+                        <p class="post-excerpt">{{POST_5_EXCERPT}}</p>
+                        <div class="post-tags">
+                            <span class="tag">{{POST_5_TAG_1}}</span>
+                            <span class="tag">{{POST_5_TAG_2}}</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 6 -->
+                <article class="post-card animate-on-scroll animate-delay-3">
+                    <div class="post-image">
+                        <div class="post-overlay">
+                            <div class="post-category">Best Practices</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">{{POST_6_DATE}}</span>
+                            <span class="post-readtime">6 min read</span>
+                        </div>
+                        <h3 class="post-title">{{POST_6_TITLE}}</h3>
+                        <p class="post-excerpt">{{POST_6_EXCERPT}}</p>
+                        <div class="post-tags">
+                            <span class="tag">{{POST_6_TAG_1}}</span>
+                            <span class="tag">{{POST_6_TAG_2}}</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content animate-on-scroll">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Stay Updated</h2>
+                    <p class="newsletter-description">
+                        Get the latest insights on product marketing and management delivered to your inbox.
+                    </p>
+                </div>
+                <div class="newsletter-form">
+                    <form class="newsletter-form-element" id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">
+                                <span>Subscribe</span>
+                                <i data-feather="arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title animate-on-scroll">Ready to Apply These Insights?</h2>
+                <p class="cta-subtitle animate-on-scroll">
+                    Let's discuss how strategic product marketing can accelerate your growth.
+                </p>
+                <div class="cta-buttons animate-on-scroll">
+                    <a href="/contact/" class="btn btn-primary btn-large">
+                        <span>Get In Touch</span>
+                        <i data-feather="arrow-right"></i>
+                    </a>
+                    <a href="/services/" class="btn btn-secondary btn-large">
+                        <span>View Services</span>
+                        <i data-feather="compass"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Edgewood Park</h3>
+                    <p class="footer-description">
+                        Strategic product leadership for B2B software companies.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Navigation</h4>
+                        <ul class="footer-nav">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about/">About</a></li>
+                            <li><a href="/services/">Services</a></li>
+                            <li><a href="/samples/">Work Samples</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Resources</h4>
+                        <ul class="footer-nav">
+                            <li><a href="/blog/">Blog</a></li>
+                            <li><a href="/testimonials/">Testimonials</a></li>
+                            <li><a href="/contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Connect</h4>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/kogan" class="social-link" target="_blank" rel="noopener noreferrer">
+                                <i data-feather="linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="{{GITHUB_URL}}" class="social-link" target="_blank" rel="noopener noreferrer">
+                                <i data-feather="github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Edgewood Park. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/animations.js"></script>
+</body>
+</html>
