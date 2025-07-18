@@ -7,6 +7,10 @@ This is a static website for Edgewood Park, a strategic product leadership consu
 ## Recent Changes
 
 - **July 18, 2025**: Complete content integration and visual enhancement:
+  - **Favicon**: Added professional favicon across all pages
+  - **Updated Logos**: Replaced with official HP and Salesforce logos, added Instinctive Solutions logo for Dave Jones
+  - **Company Name Fix**: Corrected Dave Jones company name to "Instinctive Solutions"
+  - **Image Improvements**: Enhanced background visibility and consistent hero image dimensions
   - **Blog Content**: Added 3 complete blog posts with real content showcasing expertise
   - **About Page**: Updated with Uri's actual bio, experience, and inspiration story about Edgewood Park
   - **Services Page**: Integrated real service offerings (Fractional CMO, Consulting, Lend a Hand)
