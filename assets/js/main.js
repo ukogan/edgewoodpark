@@ -5,13 +5,15 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeNavigation();
     initializeScrollEffects();
     initializeCounters();
-    initializeParallax();
     initializeFAQ();
     initializeFilterSystem();
     initializeNewsletterForm();
     initializeFeatherIcons();
     initializeMicroInteractions();
     initializeAccessibility();
+    
+    // Delay parallax initialization to ensure Rellax is loaded
+    setTimeout(initializeParallax, 100);
 });
 
 // ===== NAVIGATION =====
@@ -157,12 +159,19 @@ function animateProgressBar(element) {
 function initializeParallax() {
     // Initialize Rellax if available
     if (typeof Rellax !== 'undefined') {
+        console.log('Rellax library found, initializing...');
+        const rellaxElements = document.querySelectorAll('.rellax');
+        console.log('Found', rellaxElements.length, 'rellax elements');
+        
         const rellax = new Rellax('.rellax');
         
         // Optional: Add performance optimization for mobile
         if (window.innerWidth < 768) {
+            console.log('Mobile device detected, destroying rellax');
             rellax.destroy();
         }
+    } else {
+        console.log('Rellax library not found');
     }
     
     // Fallback for elements with basic parallax classes
