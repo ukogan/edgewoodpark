@@ -2293,23 +2293,30 @@ section {
 /* Additional specific overrides for logo sizing */
 .testimonials-grid .company-logo,
 .testimonials-section .company-logo,
-.testimonial-card .company-logo {
+.testimonial-card .company-logo,
+.testimonial-author-featured .company-logo {
     width: 120px !important;
     height: 80px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     overflow: hidden !important;
+    margin-left: var(--spacing-lg) !important;
 }
 
 .testimonials-grid .logo-image,
 .testimonials-section .logo-image,
-.testimonial-card .logo-image {
+.testimonial-card .logo-image,
+.testimonial-author-featured .logo-image,
+img.client-logo,
+img.logo-image {
     max-height: 80px !important;
     max-width: 120px !important;
     width: auto !important;
     height: auto !important;
     object-fit: contain !important;
+    filter: grayscale(100%) opacity(0.8) !important;
+    transition: var(--transition-medium) !important;
 }
 
 /* Service Card Component */
