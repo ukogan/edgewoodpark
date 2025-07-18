@@ -4,6 +4,16 @@
 
 This is a static website for Edgewood Park, a strategic product leadership consultancy serving B2B software executives. The site showcases services including Product Marketing, Product Management Advisory, and Fractional CMO services through a clean, professional design with nature-inspired branding.
 
+## Recent Changes
+
+- **July 18, 2025**: Added real blog content with 3 complete blog posts:
+  - "What drives good marketing content: expertise or keywords?" - A strategic guide to balancing SEO and expertise
+  - "5 Ways CFOs Can Mitigate Retention Issues to Keep the Great Resignation at Bay" - Workforce planning strategies
+  - "From Programmable Media to Programmable Creative?" - Evolution of digital marketing automation
+- **Blog Architecture**: Created individual HTML files for each blog post with proper styling and navigation
+- **Content Integration**: Updated main blog page to feature real content with proper categorization and excerpts
+- **Enhanced Styling**: Added comprehensive CSS for blog post pages with professional typography and responsive design
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
