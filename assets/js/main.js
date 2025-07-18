@@ -159,19 +159,12 @@ function animateProgressBar(element) {
 function initializeParallax() {
     // Initialize Rellax if available
     if (typeof Rellax !== 'undefined') {
-        console.log('Rellax library found, initializing...');
-        const rellaxElements = document.querySelectorAll('.rellax');
-        console.log('Found', rellaxElements.length, 'rellax elements');
-        
         const rellax = new Rellax('.rellax');
         
-        // Optional: Add performance optimization for mobile
-        if (window.innerWidth < 768) {
-            console.log('Mobile device detected, destroying rellax');
+        // Optional: Add performance optimization for mobile (only for very small screens)
+        if (window.innerWidth < 480) {
             rellax.destroy();
         }
-    } else {
-        console.log('Rellax library not found');
     }
     
     // Fallback for elements with basic parallax classes
