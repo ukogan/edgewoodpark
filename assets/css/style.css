@@ -2214,13 +2214,14 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    height: 48px;
+    width: 60px;
+    height: 36px;
+    overflow: hidden;
 }
 
 .logo-image {
-    max-height: 48px;
-    max-width: 80px;
+    max-height: 36px;
+    max-width: 60px;
     width: auto;
     height: auto;
     object-fit: contain;
