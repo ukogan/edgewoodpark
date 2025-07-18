@@ -1,0 +1,29 @@
+<!-- Service Card Component Template -->
+<!-- Usage: Replace {{icon}}, {{title}}, {{description}}, {{features}}, {{price}} with actual content -->
+<div class="service-card animate-on-scroll">
+    <div class="service-header">
+        <div class="service-icon">
+            <i data-feather="{{icon}}"></i>
+        </div>
+        <h3 class="service-title">{{title}}</h3>
+        <p class="service-description">{{description}}</p>
+    </div>
+    
+    <div class="service-features">
+        <h4 class="features-title">What's Included:</h4>
+        <ul class="features-list">
+            {{features}}
+        </ul>
+    </div>
+    
+    <div class="service-pricing">
+        <div class="price-info">
+            <span class="price-label">Starting at</span>
+            <span class="price-amount">{{price}}</span>
+        </div>
+        <a href="https://linkedin.com/in/kogan/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Contact me</span>
+            <i data-feather="linkedin"></i>
+        </a>
+    </div>
+</div>
