@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeFeatherIcons();
     initializeMicroInteractions();
     initializeAccessibility();
+    initializeScrollIndicator();
     
     // Delay parallax initialization to ensure Rellax is loaded
     setTimeout(initializeParallax, 100);
@@ -617,6 +618,23 @@ document.addEventListener('click', function(e) {
         });
     }
 });
+
+// ===== SCROLL INDICATOR =====
+function initializeScrollIndicator() {
+    const scrollArrow = document.querySelector('.scroll-arrow');
+    if (scrollArrow) {
+        scrollArrow.addEventListener('click', function() {
+            const nextSection = document.querySelector('#services-preview');
+            if (nextSection) {
+                const offsetTop = nextSection.offsetTop - 80;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
+}
 
 // ===== EXPORT FOR TESTING =====
 if (typeof module !== 'undefined' && module.exports) {
