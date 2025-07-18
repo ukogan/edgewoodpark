@@ -6,13 +6,15 @@ This is a static website for Edgewood Park, a strategic product leadership consu
 
 ## Recent Changes
 
-- **July 18, 2025**: Parallax scrolling effects and navigation fixes:
-  - **Parallax Scrolling**: Added Rellax.js library for smooth parallax effects on hero background images
+- **July 18, 2025**: Parallax scrolling effects and text readability improvements:
+  - **Parallax Scrolling**: Added Rellax.js library with enhanced speeds (-5 for backgrounds, 2-4 for elements)
   - **Navigation Links**: Fixed all navigation links to use relative paths for GitHub Pages deployment
-  - **Background Images**: Applied parallax effects to hero images across all pages (speed: -7)
-  - **Subtle Animations**: Added gentle parallax to CTA buttons and bio image for enhanced visual depth
-  - **Mobile Optimization**: Parallax effects disabled on mobile devices for better performance
-  - **Library Integration**: Rellax.js CDN added to all HTML pages with proper initialization in main.js
+  - **Enhanced Readability**: Improved text contrast with stronger overlays and text shadows
+  - **Background Overlays**: Added darker overlays (rgba(0,0,0,0.4)) to hero sections for better text visibility
+  - **Text Shadows**: Applied text shadows to all titles, subtitles, and accent text over backgrounds
+  - **Section Enhancements**: Added contrast improvements to inspiration, services, and testimonial sections
+  - **Mobile Optimization**: Parallax effects only disabled on very small screens (< 480px)
+  - **Library Integration**: Rellax.js CDN with delayed initialization for reliable performance
 
 - **July 18, 2025**: Complete content integration and visual enhancement:
   - **Favicon**: Added professional favicon across all pages
