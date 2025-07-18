@@ -1606,8 +1606,43 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../img/park-vista.jpg') center/cover;
+    background: url('../img/park-nature-3.jpg') center/cover;
     opacity: 0.05;
+    z-index: -1;
+}
+
+/* Additional subtle background variations */
+.services-overview {
+    position: relative;
+    padding: var(--spacing-4xl) 0;
+}
+
+.services-overview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/park-vista.jpg') center/cover;
+    opacity: 0.03;
+    z-index: -1;
+}
+
+.featured-testimonial {
+    position: relative;
+    padding: var(--spacing-4xl) 0;
+}
+
+.featured-testimonial::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/above-the-fog.jpg') center/cover;
+    opacity: 0.03;
     z-index: -1;
 }
 

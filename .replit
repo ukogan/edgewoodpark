@@ -2,7 +2,7 @@ modules = ["nodejs-20", "python-3.11"]
 
 [nix]
 channel = "stable-24_05"
-packages = ["xcodebuild", "zlib"]
+packages = ["xcodebuild", "zlib", "imagemagick"]
 
 [workflows]
 runButton = "Project"
