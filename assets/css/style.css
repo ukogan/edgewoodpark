@@ -1579,3 +1579,160 @@ section {
         font-size: 1rem;
     }
 }
+
+/* ===== ABOUT PAGE INSPIRATION SECTION ===== */
+.inspiration-section {
+    padding: var(--spacing-4xl) 0;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.inspiration-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-4xl);
+    align-items: center;
+}
+
+.inspiration-subtitle {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-lg);
+}
+
+.inspiration-paragraph {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.inspiration-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.park-illustration {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.nature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-md);
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-green) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nature-icon i {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+.visual-text {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* ===== SERVICES PAGE GRID ===== */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-2xl);
+    margin-top: var(--spacing-4xl);
+}
+
+.service-card {
+    background: white;
+    border-radius: 16px;
+    padding: var(--spacing-2xl);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: var(--transition-medium);
+    border: 1px solid var(--border-color);
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.service-card .service-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-green) 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-card .service-icon i {
+    width: 28px;
+    height: 28px;
+    color: white;
+}
+
+.service-card .service-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.service-card .service-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: var(--transition-medium);
+}
+
+.service-link:hover {
+    color: var(--primary-green-dark);
+}
+
+.service-link i {
+    width: 16px;
+    height: 16px;
+}
+
+/* Mobile responsive for inspiration and services */
+@media (max-width: 768px) {
+    .inspiration-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .service-card {
+        padding: var(--spacing-xl);
+    }
+}
