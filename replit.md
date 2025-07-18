@@ -6,15 +6,15 @@ This is a static website for Edgewood Park, a strategic product leadership consu
 
 ## Recent Changes
 
-- **July 18, 2025**: Parallax scrolling effects and text readability improvements:
-  - **Parallax Scrolling**: Added Rellax.js library with enhanced speeds (-5 for backgrounds, 2-4 for elements)
-  - **Navigation Links**: Fixed all navigation links to use relative paths for GitHub Pages deployment
-  - **Enhanced Readability**: Improved text contrast with stronger overlays and text shadows
-  - **Background Overlays**: Added darker overlays (rgba(0,0,0,0.4)) to hero sections for better text visibility
-  - **Text Shadows**: Applied text shadows to all titles, subtitles, and accent text over backgrounds
-  - **Section Enhancements**: Added contrast improvements to inspiration, services, and testimonial sections
-  - **Mobile Optimization**: Parallax effects only disabled on very small screens (< 480px)
-  - **Library Integration**: Rellax.js CDN with delayed initialization for reliable performance
+- **July 18, 2025**: CTA conversion to LinkedIn and UI improvements:
+  - **LinkedIn Integration**: Replaced all CTAs with "Contact me" button linking to linkedin.com/in/kogan/
+  - **Icon Updates**: Changed all CTA icons to LinkedIn icon using Feather Icons
+  - **Navigation CTA**: Updated navigation "Contact" link to "Contact me" with LinkedIn destination
+  - **Scroll Indicator Fix**: Fixed blank scroll arrow - now shows chevron-down icon with glassmorphism design
+  - **Smooth Scrolling**: Added click functionality to scroll indicator for smooth navigation
+  - **Text Readability**: Enhanced contrast with stronger overlays and text shadows
+  - **Background Overlays**: Added darker overlays (rgba(0,0,0,0.4)) to hero sections for better visibility
+  - **Parallax Effects**: Maintained Rellax.js library with enhanced speeds (-5 for backgrounds, 2-4 for elements)
 
 - **July 18, 2025**: Complete content integration and visual enhancement:
   - **Favicon**: Added professional favicon across all pages
